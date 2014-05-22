@@ -11,7 +11,7 @@ $$
 d(h,i) = \sqrt{ \sum_{j=1}^{N} (X_{h,j}-X_{i,j})^2 }
 $$
 
-Here are some data
+Here is some data:
 ```{r}
 library(dagdata)
 data(tissuesGeneExpression)
@@ -22,7 +22,7 @@ round(mat,1)
 ```
 
 
-Let's compute distance
+Let's compute the distance between samples:
 ```{r}
 d <- dist(t(e)) ##important to take transpose
 dim(d)
